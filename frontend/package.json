@@ -8,7 +8,8 @@
     "dev": "vite",
     "format": "prettier --write src/",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "start": "vite preview --port 5000 --host"
   },
   "dependencies": {
     "@apollo/client": "^3.10.5",

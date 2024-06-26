@@ -21,7 +21,6 @@ const authMiddleware = new ApolloLink((operation, forward) => {
   return forward(operation);
 })
 
-
 // Create the apollo client
 export const apolloClient = new ApolloClient({
   link: concat(authMiddleware, httpLink),
